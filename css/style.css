@@ -1,0 +1,152 @@
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%)
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.columns {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    width: 12% ;
+    height: 43%;
+    padding: 50px 46px 46px 46px;
+    position: relative;
+}
+
+.title{
+    font-family: 'Big Shoulders Display', cursive;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    color: var(--very-light-gray);
+}
+
+p{  
+    word-spacing: 1pt;
+    line-height: 20pt;
+    color: var(--Transparent-white);
+    font-weight: 400;
+}
+
+.sedans {
+    background-color: var(--orange);
+    border-top-left-radius: 8px ;
+    border-bottom-left-radius: 8px;
+}
+
+.suvs {
+    background-color: var(--cyan);
+}
+
+.luxury {
+    background-color: var(--dark-cyan);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.btn {
+    position: absolute;
+    top: 80%;
+    width: 45%;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--very-light-gray);
+    font-size: 15px;
+    border-radius: 30px;
+    padding: 15px 20px 15px 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+.btn-sedans {
+    color: var(--orange);
+    border: 2px solid hsl(31, 77%, 52%);
+}
+
+.btn-sedans:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.btn-suv {
+    color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(184, 100%, 22%);
+}
+
+.btn-suv:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.btn-luxury {
+    color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(179, 100%, 13%);
+}
+
+.btn-luxury:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+
+@media (max-width: 1250px) {
+    .columns {
+      flex-wrap: wrap;
+    }
+
+    .column {
+        width: 20%;
+    }
+  }
+
+  @media (max-width: 730px) {
+    .columns {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-top: 70%;
+        padding-bottom: 70%;
+    }
+
+    .column {
+        width: 55%;
+        min-height: 48%;
+    }
+
+    .sedans{
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .luxury {
+        border-radius: 0px 0px 5px 5px;
+        
+    }
+  }
+  
+
+  @media (max-width: 450px) {
+
+    .columns {
+        padding-top: 130%;
+        padding-bottom: 130%;
+    }
+
+    .column {
+        min-height: 56%;
+    }
+  }
+
