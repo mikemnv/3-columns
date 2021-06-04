@@ -59,8 +59,7 @@ p{
 }
 
 .btn {
-    position: absolute;
-    top: 80%;
+   margin-top: 40px;
     width: 45%;
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--very-light-gray);
